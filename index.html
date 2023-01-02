@@ -36,13 +36,26 @@
     <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
     <a-nft
       type="nft"
-      url="webAR_sample/model/marker-image/trex"
+      url="webAR_sample/model/marker-image/marker5"
       smooth="true"
-      smoothCount="10"
+      smoothCount="50"
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-      <a-box position="150 300 100" rotation="0 45 0" color="#4CC3D9" scale="50 50 50"></a-box>
+      <a-entity
+        gltf-model="https://findthevision.github.io/model-test/model/logo8.gltf"
+        scale="100 100 100"
+        position="0 0 0"
+      >
+      </a-entity>
+      <a-plane
+        position="0 20 -20"
+        rotation="0 0 0"
+        width="500"
+        height="500"
+        color="#3A3A3A"
+      >
+      </a-plane>
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
